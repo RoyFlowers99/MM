@@ -2,6 +2,11 @@ html, body {
     padding: 0;
     margin: 0;
 }
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 /*  
     font-family: 'DM Serif Display', serif;
 
@@ -11,17 +16,17 @@ html, body {
 */
 header {
     display: flex;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/header.webp);
     background-position: right bottom;
     background-size: cover;
     letter-spacing: 1px;
     color: white;
-    padding: 1vw;
+    padding: 1.5vw;
     font-size: larger;
     justify-content: space-between;
 }
 nav {
-    max-width: 20vw;
+    max-width: 30vw;
     height: auto;
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0.528);
@@ -31,14 +36,17 @@ nav {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 nav>a {
+    font-size: 22px;
     padding: 5px;
     transition: all .3s ease-in-out;
     margin: 10px;
+    border: none;
+    border-radius: 5px;
 }
 nav>a:visited {
     color: white;
@@ -49,21 +57,24 @@ nav>a:hover {
     color: black;
     background-color: white;
     box-shadow: 0px 5px 10px rgba(246, 246, 246, 0.425);
-    border-radius: 1px;
+    border-radius: 5px;
     cursor: pointer;
 }
 ul {
     padding: 20px 35px;
+    font-size: 22px;
     background-color: rgba(0, 0, 0, 0.528);
     border-radius: 10px;
     backdrop-filter: blur(50px);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.885);
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 0px 10px 0px 0px;
+}
+ul>li {
+    line-height: 1.5;
 }
 section {
     padding: 20px;
-    height: 1000px;
 }
 section>h1 {
     margin: 0 0 20px 0;
@@ -79,7 +90,9 @@ section>hr {
     border: none;
 }
 section>div {
-    background-image: url(../img/marcus.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 200px;
     background-attachment: fixed;
     background-position: 50% 15%;
@@ -87,16 +100,63 @@ section>div {
     background-size: cover;
     border-radius: 5px;
 }
+section>div#intro{
+    background-image: url(../img/marcus.webp);
+}
+section>div#fourVirtues {
+    background-image: url(../img/Clouds.webp);
+}
+section>div>p {
+    font-family: 'DM Serif Text', serif;;
+    text-align: center;
+    padding: 50px;
+    width: 70vw;
+    color: white;
+    font-size: 26px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.585);
+    backdrop-filter: blur(10px) brightness(30%);
+    -webkit-backdrop-filter: blur(10px) brightness(30%);
+}
 section>article>h2 {
     font-size: 40px;
+    font-family: 'DM Serif Text', serif;
 }
 section>article>p {
+    text-indent: 30px;
     font-family: 'Roboto', sans-serif;;
     width: 80vw;
     text-align: left;
     line-height: 200%;
-    font-size: large;
+    font-size: 24px;
 }
 section>article>p::first-letter {
-    font-size: 50px
+    font-size: 40px
+}
+section>article>p.subP::first-letter {
+    font-size: 24px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    min-height: 30px;
+    background: linear-gradient(90deg, rgba(48,43,33,1) 0%, rgba(22,21,20,1) 100%);
+}
+footer>p {
+    font-size: 16px;
+    font-family: 'DM Serif Text', serif;
+    color: white;
+    text-shadow: rgba(255, 255, 255, 0.8) 1px 0 20px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        background-color: black;
+        filter: brightness(0);
+    }
+    100% {
+        filter: brightness(1);
+     }
 }
