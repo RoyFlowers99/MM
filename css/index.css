@@ -105,6 +105,7 @@ section>div#intro{
 }
 section>div#fourVirtues {
     background-image: url(../img/Clouds.webp);
+    /*background-size: auto !important;*/
 }
 section>div>p {
     font-family: 'DM Serif Text', serif;;
@@ -118,15 +119,20 @@ section>div>p {
     backdrop-filter: blur(10px) brightness(30%);
     -webkit-backdrop-filter: blur(10px) brightness(30%);
 }
+section>article {
+    text-align: center;
+    padding: 0px 15vw;
+    word-wrap: break-word;
+}
 section>article>h2 {
     font-size: 40px;
     font-family: 'DM Serif Text', serif;
+    text-align: left;
 }
 section>article>p {
     text-indent: 30px;
-    font-family: 'Roboto', sans-serif;;
-    width: 80vw;
     text-align: left;
+    font-family: 'Roboto', sans-serif;
     line-height: 200%;
     font-size: 24px;
 }
