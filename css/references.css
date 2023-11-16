@@ -76,6 +76,7 @@ header>ul>li {
   line-height: 1.5;
 }
 section {
+  height: 80vh;
   padding: 20px;
 }
 section>h1 {
