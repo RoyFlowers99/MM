@@ -1,0 +1,161 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/*  
+  font-family: 'DM Serif Display', serif;
+
+  font-family: 'DM Serif Text', serif;
+
+  font-family: 'Roboto', sans-serif;
+*/
+header {
+  display: flex;
+  background-image: url(../img/header.webp);
+  background-position: right bottom;
+  background-size: cover;
+  letter-spacing: 1px;
+  color: white;
+  padding: 1.5vw;
+  font-size: larger;
+  justify-content: space-between;
+}
+nav {
+  max-width: 30vw;
+  height: auto;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.528);
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.885);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+nav>a {
+  font-size: 22px;
+  padding: 5px;
+  transition: all .3s ease-in-out;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+nav>a:visited {
+  color: white;
+  text-decoration: none;
+}
+nav>a:hover {
+  transform: translate(0px, -2px);
+  color: black;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(246, 246, 246, 0.425);
+  border-radius: 5px;
+  cursor: pointer;
+}
+header>ul {
+  padding: 20px 35px;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.528);
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.885);
+  font-family: 'Roboto', sans-serif;
+  margin: 0px 10px 0px 0px;
+}
+header>ul>li {
+  line-height: 1.5;
+}
+section {
+  padding: 20px;
+}
+section>h1 {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'DM Serif Display', serif;
+}
+section>hr {
+  margin-bottom: 20px;
+  width: 70vw;
+  height: 10px;
+  background-color: rgb(217, 181, 23);
+  border: none;
+}
+section>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: 50% 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+section>div#top{
+  background-image: url(../img/worksCited.webp);
+}
+section>div>p {
+  font-family: 'DM Serif Text', serif;;
+  text-align: center;
+  padding: 50px;
+  width: 70vw;
+  color: white;
+  font-size: 26px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.585);
+  backdrop-filter: blur(10px) brightness(30%);
+  -webkit-backdrop-filter: blur(10px) brightness(30%);
+}
+section>article {
+  text-align: center;
+  padding: 0px 15vw;
+  word-wrap: break-word;
+}
+section>article>h2 {
+  font-size: 40px;
+  font-family: 'DM Serif Text', serif;
+  text-align: left;
+}
+section>article>ul {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  padding-left: 80px;
+  text-indent: -100px;
+  list-style-type: none;
+  line-height: 2;
+  font-size: 24px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  min-height: 30px;
+  background: linear-gradient(90deg, rgba(48,43,33,1) 0%, rgba(22,21,20,1) 100%);
+}
+footer>p {
+  font-size: 16px;
+  font-family: 'DM Serif Text', serif;
+  color: white;
+  text-shadow: rgba(255, 255, 255, 0.8) 1px 0 20px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      background-color: black;
+      filter: brightness(0);
+  }
+  100% {
+      filter: brightness(1);
+   }
+}

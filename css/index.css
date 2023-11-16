@@ -47,6 +47,8 @@ nav>a {
     margin: 10px;
     border: none;
     border-radius: 5px;
+    text-decoration: none;
+    color: white;
 }
 nav>a:visited {
     color: white;
@@ -104,7 +106,7 @@ section>div#intro{
     background-image: url(../img/marcus.webp);
 }
 section>div#fourVirtues {
-    background-image: url(../img/Clouds.webp);
+    background-image: url(../img/clouds.webp);
     /*background-size: auto !important;*/
 }
 section>div>p {
@@ -138,6 +140,15 @@ section>article>p {
 }
 section>article>p::first-letter {
     font-size: 40px
+}
+section>article>p>a {
+    transition: all ease-in-out .1s;
+    text-decoration: none;
+    color: black;
+}
+section>article>p>a:hover {
+    text-decoration: underline;
+    text-shadow: rgb(170, 150, 0) 0px 0px 10px;
 }
 section>article>p.subP::first-letter {
     font-size: 24px;
