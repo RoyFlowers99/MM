@@ -2,11 +2,6 @@ html, body {
   padding: 0;
   margin: 0;
 }
-body {
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
 /*  
   font-family: 'DM Serif Display', serif;
 
@@ -78,7 +73,7 @@ header>ul>li {
   line-height: 1.5;
 }
 section {
-  height: 80vh;
+  min-height: 80vh;
   padding: 20px;
 }
 section>h1 {
@@ -152,14 +147,4 @@ footer>p {
   font-family: 'DM Serif Text', serif;
   color: white;
   text-shadow: rgba(255, 255, 255, 0.8) 1px 0 20px;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-      background-color: black;
-      filter: brightness(0);
-  }
-  100% {
-      filter: brightness(1);
-   }
 }
